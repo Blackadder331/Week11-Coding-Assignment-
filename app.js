@@ -60,7 +60,7 @@ function check(X) {
         $("#t5").hasClass('X') &&
         $("#t6").hasClass('X'))
         { console.log('Winner')
-        alert('YOU WIN!');
+        insertWin();
     } else if ($("#t7").hasClass('X') &&
         $("#t8").hasClass('X') &&
         $("#t9").hasClass('X'))
@@ -95,7 +95,7 @@ function check(X) {
         $("#t2").hasClass('O') &&
         $("#t3").hasClass('O'))
         { console.log('Loser')
-        insertLose()
+        insertLose();
     } else if ($("#t4").hasClass('O') &&
         $("#t5").hasClass('O') &&
         $("#t6").hasClass('O'))
