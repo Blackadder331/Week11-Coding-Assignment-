@@ -140,13 +140,17 @@ function check(X) {
 // Reset button
 $('.reset').click(function() {
     $('td').html('');
+    $('table').find('td').each(function() {
+        $(this).removeClass('X').removeClass('O');
+      });
+    $('.alert').html('').fadeOut(1000);
   });
 
-function reset(table) {
-    table.find('td').each(function() {
-      $(this).removeClass('X').removeClass('O');
-    });
-}
+// function reset(table) {
+//     table.find('td').each(function() {
+//       $(this).removeClass('X').removeClass('O');
+//     });
+// }
 
 
 
